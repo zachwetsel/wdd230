@@ -22,10 +22,14 @@
     <header>
         <img src="images/profile.png" alt="Zach Wetsel Profile Picture" height="192" width="145">
         <span>Zach Wetsel</span>
+        <div id="darkmode">
+            <img src="images/darkmode.svg" alt="dark mode button" id="darkButton">
+        </div>
     </header>
     <nav>
-        <ul>
-            <li><a href="index.html">Home</a></li>
+        <button id="myButton"></button>
+        <ul class="menuLinks">
+            <li class="current-menu-item"><a href="index.html">Home</a></li>
             <li><a href="">Chamber</a></li>
             <li><a href="week01/chamber-site-plan.html">Site Plan</a></li>
             <li><a href="">Form</a></li>
@@ -53,5 +57,7 @@
         <p id="lastModified"></p>
     </footer>
     <script src="scripts/getDates.js"></script>
+    <script src="scripts/hamburgerMenu.js"></script>
+    <script src="scripts/darkMode.js"></script>
 </body>
 </html>
