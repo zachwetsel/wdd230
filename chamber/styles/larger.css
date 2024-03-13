@@ -1,0 +1,41 @@
+@media screen and (min-width: 500px) {
+
+    nav ul {
+        display: flex;
+    }
+    nav ul li {
+        flex: 1 1 100%;
+    }
+    #myButton {
+        display: none;
+    }
+    ul.menuLinks, ul.menuLinks.open {
+        display: flex;
+        justify-content: flex-end;
+    }
+    ul.menuLinks a:hover {
+        background-color: rgba(255, 255, 255, 0.2);
+        
+    }
+    
+    header {
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+    header img {
+        grid-column: 2/3;
+    }
+    header span {
+        grid-column: 3/4;
+    }
+    main {
+        display: grid;
+        grid-template-columns: 2fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+    }
+
+    #hero {
+        grid-column: 1/2;
+        grid-row: 1/4;
+    }
+    
+}
