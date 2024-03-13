@@ -31,7 +31,6 @@ body {
 
 header {
     background-color: #033F63;
-    padding: 20px;
     display: grid;
     grid-template-rows: 1fr 1fr 1fr;
     grid-template-columns: 1fr 1fr;
