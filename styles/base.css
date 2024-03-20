@@ -46,6 +46,7 @@ header span {
 }
 #profile {
     grid-row: 1/4;
+    margin: 2em;
 }
 
 nav {
