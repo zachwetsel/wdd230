@@ -41,5 +41,8 @@
     header span {
         grid-column: 3/4;
     }
+    .hero {
+        height: 600px;
+    }
     
 }
