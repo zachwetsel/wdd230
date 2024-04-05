@@ -1,0 +1,83 @@
+:root {
+    --primary: #415d43;
+    --secondary: #709775;
+    --light: #A1CCA5;
+}
+.wf1 fieldset {
+    margin: 2rem 0;
+    width: 100%;
+    max-width: 400px;
+    border: 1px solid --light;
+    border-radius: 6px;
+    padding: .5rem 2%;
+    text-align: left;
+}
+.wf1 legend {
+    background-color: var(--primary);
+    padding: .5rem .5rem;
+    color: white;
+    text-align: center;
+}
+.wf1 label {
+    color: var(--primary);
+    font-size: .9rem;
+}
+.wf1 input[type="text"],
+.wf1 input[type="password"],
+.wf1 input[type="email"] {
+    text-align: left;
+    background-color: #eee;
+    display: block;
+    border: solid 1px var(--secondary);
+    border-radius: 6px;
+    padding: .75rem;;
+    width: 100%;
+    max-width: 400px;
+    appearance: none;
+}
+.wf1 input[type="range"] {
+    -webkit-appearance: none;
+    width: 100%;
+    max-width: 400px;
+    background-color: #eee;
+}
+.wf1 input[type="range"]::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    width: 1.25rem;
+    height: 1.25rem;
+    border-radius: 50%;
+    background-color: var(--secondary);
+}
+.wf1 input[type="submit"] {
+    display: block;
+    border: none;
+    background-image: linear-gradient(var(--primary), var(--secondary));
+    color: #fff;
+    border-radius: 6px;
+    width: 100%;
+    max-width: 400px;
+    padding: .8rem;
+    margin-bottom: 4rem;
+    box-shadow: 1px 1px 4px #999;
+}
+.wf1 input:required {
+    border-left: solid 8px maroon;
+}
+.wf1 input:required:valid {
+    border-left: solid 8px var(--primary);
+}
+
+#rangevalues {
+    display: flex;
+    margin: 0 0 0 25px;
+    width: 100%;
+    max-width: 400px;
+}
+#rangevalues option {
+    flex: 1 1.5 auto;
+    margin-left: -3rem;
+    
+}
+input:focus, textarea:focus {
+    outline: none;
+}

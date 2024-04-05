@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zach Wetsel - WDD 230 - Web Frontend Development</title>
+    <meta name="description" content="WDD 230 - Web Frontend Development - Zach Wetsel - course assignment portal">
+    <meta name="author" content="Zach Wetsel">
+    <meta property="og:title" content="Zach Wetsel - WDD 230 - Web Frontend Development">
+    <meta property="og:type" content="website">
+    <link href="styles/normalize.css" rel="stylesheet">
+    <link href="styles/base.css" rel="stylesheet">
+    <link href="styles/larger.css" rel="stylesheet">
+    <link href="styles/form.css" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <img src="images/profile.webp" alt="Zach Wetsel Profile Picture" id="profile" height="192" width="145">
+        <span>Zach Wetsel</span>
+        <div id="darkmode">
+            <img src="images/darkmode.svg" alt="dark mode button" id="darkButton">
+        </div>
+    </header>
+    <nav>
+        <button id="myButton"></button>
+        <ul class="menuLinks">
+            <li class="current-menu-item"><a href="index.html">Home</a></li>
+            <li><a href="chamber/index.html">Chamber</a></li>
+            <li><a href="week01/chamber-site-plan.html">Site Plan</a></li>
+            <li><a href="form.html">Form</a></li>
+        </ul>
+    </nav>
+    <main>
+        <form method="get" action="record.html" class="wf1">
+            <fieldset>
+                <legend>Account Information</legend>
+                <label>Username*<input type="text" name="username" id="username" required></label>
+                <label>Password*<input type="password" pattern="[a-zA-Z0-9]{8,}" name="password" id="password" required></label>
+                <label>Confirm Password*<input type="password" pattern="[a-zA-Z0-9]{8,}" name="password2" id="password2" required></label>
+                <label>Please enter a valid email address*<input type="email" pattern="a-zA-Z0-9._%+-]+@byui\.edu$" name="email" id="email" required></label>
+            </fieldset>
+
+            <fieldset>
+                <legend>Page Rating</legend>
+                <div id="rangevalue">0</div>
+                <input type="range" id="rating" name="rating" min="0" max="10" value="0" step="1" list="rangevalues">
+                <datalist id="rangevalues">
+                    <option value="0">0</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                    <option value="7">7</option>
+                    <option value="8">8</option>
+                    <option value="9">9</option>
+                    <option value="10">10</option>
+                </datalist>
+            </fieldset>
+            <input type="submit" value="Rate the Page">
+        </form>
+        <div id="feedback"></div>
+    </main>
+    <footer>
+        <p></p>
+        <p id="lastModified"></p>
+    </footer>
+    <script src="scripts/validateForm.js"></script>
+    <script src="scripts/getDates.js"></script>
+    <script src="scripts/rangeIdentifier.js"></script>
+</body>
