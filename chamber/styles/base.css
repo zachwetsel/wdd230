@@ -1,4 +1,8 @@
-
+:root {
+    --primary: #415d43;
+    --secondary: #709775;
+    --light: #A1CCA5;
+}
 * {
     margin: 0;
     padding: 0;
@@ -30,7 +34,7 @@ body {
 }
 
 header {
-    background-color: #415D43;
+    background-color: var(--primary);
     display: grid;
     grid-template-rows: 1fr 1fr 1fr;
     grid-template-columns: 1fr 1fr;
@@ -52,7 +56,7 @@ header span {
 }
 
 nav {
-    background-color: #709775;
+    background-color: var(--secondary);
 }
 nav ul {
     list-style-type: none;
@@ -120,12 +124,12 @@ main {
 }
 
 main h1 {
-    border-bottom: 1px solid #415D43;
-    color: #415D43;
+    border-bottom: 1px solid --primary;
+    color: var(--primary);
 }
 
 main h2 {
-    background-color: #709775;
+    background-color: var(--secondary);
     color: white;
     display: block;
     text-align: center;
@@ -145,7 +149,7 @@ main li {
 }
 
 footer {
-    background-color: #415D43;
+    background-color: var(--primary);
     color: white;
     position: fixed;
     left: 0;
@@ -161,11 +165,81 @@ footer {
     box-shadow: 1px 1px 10px black;
     padding-bottom: 50px;
     margin-bottom: 20px;
-    border: 1px solid #415D43;
+    border: 1px solid --primary;
     background-color: lightgray;
     border-radius: 10px;
     overflow: hidden;
 }
 .card h2 {
     margin-bottom: 1rem;
+}
+
+table {
+    margin-top: 2rem;
+    margin-bottom: 4rem;
+}
+.wf1 fieldset {
+    margin: 2rem;
+    width: 100%;
+    max-width: 800px;
+    border: 1px solid --light;
+    padding: .5rem 2%;
+    text-align: left;
+    background-color: var(--light);
+}
+.wf1 legend {
+    background-color: var(--secondary);
+    padding: .5rem .5rem;
+}
+.wf1 label {
+    display: block;
+    font-size: .9rem;
+    text-align: left;
+    padding: .5rem;
+}
+.wf1 input[type="text"],
+.wf1 input[type="email"],
+.wf1 input[type="telephone"],
+.wf1 textarea {
+    text-align: left;
+    display: block;
+    border: solid 1px var(--secondary);
+    padding: .75rem;
+    margin-top: .5rem;
+    width: 100%;
+    max-width: 800px;
+    appearance: none;
+}
+.wf1 input[type="submit"] {
+    display: block;
+    border: none;
+    background-image: linear-gradient(var(--primary), var(--secondary));
+    color: white;
+    width: 100%;
+    max-width: 400px;
+    padding: .8rem;
+    margin-left: 2rem;
+    box-shadow: 1px 1px 4px #999; 
+}
+.wf1 input[type="radio"] {
+    margin-right: 6px;
+}
+#levels{
+    caption-side: bottom;
+}
+#levels th {
+    background-color: var(--secondary);
+    padding: .75rem;
+    border: solid 1px var(--primary);
+    color: white;
+}
+#levels tbody td {
+    background-color: var(--light);
+}
+#levels tfoot {
+    background-color: var(--primary);
+    color: white;
+}
+#levels tfoot th {
+    background-color: var(--primary);
 }

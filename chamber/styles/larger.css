@@ -78,5 +78,16 @@
     .main-content figure:hover figcaption {
         opacity: 1;
     }
-    
+    div.join {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 4rem;
+    }
+    .join form {
+        grid-column: 1/2;
+    }
+    .join table {
+        grid-column: 2/3;
+        margin-top: 0;
+    }
 }

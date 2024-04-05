@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Idaho Falls Chamber of Commerce</title>
+    <meta name="description" content="Idaho Falls Chamber of Commerce Project for WDD230">
+    <meta name="author" content="Zach Wetsel">
+    <meta property="og:title" content="Idaho Falls Chamber of Commerce Project for WDD230">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://encrypted-tbn3.gstatic.com/licensed-image?q=tbn:ANd9GcTN3G_7oWjesGO-Ecs6DNTo2FfIppNOh73bilMsTLdN93h_ejWTA07LBgFQepDnMuoTCMSGxyiahMd5681inSwKz-gz0lYMded12ri9cQ">
+    <meta property="og:url" content="https://zachwetsel.github.io/wdd230/chamber/index.html">
+    <link href="styles/normalize.css" rel="stylesheet">
+    <link href="styles/base.css" rel="stylesheet">
+    <link href="styles/larger.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;400;700&display=swap" rel="stylesheet">
+    <link rel="icon" href="favicon.ico">
+</head>
+<body>
+    <header>
+        <img src="images/idaho-falls.webp" alt="Idaho Falls">
+        <span>Idaho Falls Chamber of Commerce</span>
+    </header>
+    <nav>
+        <button id="myButton"></button>
+        <ul class="menuLinks">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="discover.html">Discover</a></li>
+            <li><a>Directory</a></li>
+            <li><a>Join</a></li>
+        </ul>
+    </nav>
+    <main>
+        <div class="join">
+            <form method="get" action="thankyou.html" class="wf1">
+                <fieldset>
+                    <legend>Personal Information</legend>
+                    <label>First Name*<input type="text" name="fname" id="fname" required></label>
+                    <label>Last Name*<input type="text" name="lname" id="lname" required></label>
+                    <label>Email Address*<input type="email" name="email" id="email" placeholder="example@gmail.com"></label>
+                    <label>Mobile Phone*<input type="telephone" name="phone" id="phone" required></label>
+                    <label>Position<input type="text" name="position" id="position" pattern="[a-zA-Z\s-]{7,}"></label>
+                </fieldset>
+                <fieldset>
+                    <legend>Business Information</legend>
+                    <label>Business/Organization Name*<input type="text" name="business" id="business" required></label>
+                    <label>Business Description<textarea name="description" id="description"></textarea></label>
+                    <input type="hidden" id="timestamp" name="timestamp">
+                </fieldset>
+                <fieldset>
+                    <legend>Chamber of Commerce Membership</legend>
+                    <label><input type="radio" name="Membership" value="nonprofit"> Non-Profit</label>
+                    <label><input type="radio" name="Membership" value="bronze"> Bronze Membership</label>
+                    <label><input type="radio" name="Membership" value="silver"> Silver Membership</label>
+                    <label><input type="radio" name="Membership" value="gold"> Gold Membership</label>
+                </fieldset>
+                <input type="submit" value="Join the Chamber">
+            </form>
+
+            <table id="levels">
+                <caption>Membership levels of the Idaho Falls Chamber of Commerce</caption>
+                <thead>
+                    <tr>
+                        <td></td>
+                        <th scope="col">Non-Profit</th>
+                        <th scope="col">Bronze Membership</th>
+                        <th scope="col">Silver Membership</th>
+                        <th scope="col">Gold Membership</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <th scope="row">Luncheons</th>
+                        <td>✔️</td>
+                        <td>✔️</td>
+                        <td>✔️</td>
+                        <td>✔️</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">Special Events</th>
+                        <td>✔️</td>
+                        <td>❌</td>
+                        <td>✔️</td>
+                        <td>✔️</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">Business Trainings</th>
+                        <td>✔️</td>
+                        <td>❌</td>
+                        <td>❌</td>
+                        <td>✔️</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">Business Trainings</th>
+                        <td>✔️</td>
+                        <td>❌</td>
+                        <td>❌</td>
+                        <td>✔️</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">Advertising</th>
+                        <td>❌</td>
+                        <td>❌</td>
+                        <td>❌</td>
+                        <td>✔️</td>
+                    </tr>
+                </tbody>
+                <tfoot>
+                    <th scope="row">Cost per Year</th>
+                    <td>None</td>
+                    <td>$100</td>
+                    <td>$500</td>
+                    <td>$1000</td>
+                </tfoot>
+            </table>
+        </div>
+    </main>
+    <footer>
+        <p>Contact Info</p>
+        <p></p>
+        <p id="lastModified"></p>
+    </footer>
+    <script src="scripts/getDates.js"></script>
+    <script src="scripts/hamburgerMenu.js"></script>
+    <script src="scripts/timestamp.js"></script>
+</body>
+</html>
