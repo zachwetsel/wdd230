@@ -2,10 +2,26 @@
     #cards {
         display: grid;
         grid-template-columns: 2fr 1fr;
+        grid-template-rows: auto auto;
         column-gap: 10px;
     }
 
-    .card {
+    .card1 {
+        width: 100%;
+        box-shadow: 1px 1px 10px black;
+        grid-column: 1/2;
+        grid-row: 1/3;
+    }
+    .card2 {
+        width: 100%;
+        box-shadow: 1px 1px 10px black;
+        align-self: start;
+        grid-column: 2/3;
+        grid-row: 1/2;
+    }
+    #cards iframe {
+        grid-column: 2/3;
+        grid-row: 2/3;
         width: 100%;
         box-shadow: 1px 1px 10px black;
     }

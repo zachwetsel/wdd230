@@ -150,6 +150,7 @@ main h2 {
     display: block;
     text-align: center;
     padding: .75rem 0;
+    margin-bottom: 1rem;
 }
 main.dark h2 {
     background-color: lightgray;
@@ -166,11 +167,19 @@ main.dark p {
 main.dark a {
     color: white;
 }
-main ul {
+#activities-list ul {
     padding: 10px;
+
 }
-main li {
+#activities-list li {
     text-align: left;
+    appearance: none;
+    list-style-type: none;
+}
+#activities-list li h3 {
+    text-align: left;
+    color: #033F63;
+    padding-left: 1rem;
 }
 
 .hero {
