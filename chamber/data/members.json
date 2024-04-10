@@ -4,7 +4,7 @@
         "address": "5029 Sunnyside Rd, Ammon, ID",
         "phone": "(208)932-7036",
         "website":"https://order.duckdonuts.com/menu/duck-donuts-ammon", 
-        "image": "",
+        "image": "duck-donuts.webp",
         "membership": "Gold"
     },
     {
@@ -12,7 +12,7 @@
         "address": "3330 S 15th E, Idaho Falls, ID",
         "phone": "(208)478-3300",
         "website":"https://www.iccu.com/locations/sunnyside-branch/", 
-        "image": "",
+        "image": "iccu.webp",
         "membership": "Gold"
     },
     {
@@ -20,7 +20,7 @@
         "address": "1600 S 25th E, Idaho Falls, ID",
         "phone": "(208)524-3000",
         "website":"https://cei.edu/", 
-        "image": "",
+        "image": "cei.webp",
         "membership": "Gold"
     },
     {
@@ -28,7 +28,7 @@
         "address": "2325 Coronado St, Idaho Falls, ID",
         "phone": "(208)557-2700",
         "website":"https://www.mountainviewhospital.org/", 
-        "image": "",
+        "image": "mountain-view-hospital.webp",
         "membership": "Gold"
     },
     {
@@ -36,7 +36,7 @@
         "address": "333 Northgate Mile, Idaho Falls, ID",
         "phone": "(208)522-1800",
         "website":"https://www.postregister.com/", 
-        "image": "",
+        "image": "post-register.webp",
         "membership": "Gold"
     },
     {

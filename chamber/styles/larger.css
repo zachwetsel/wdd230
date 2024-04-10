@@ -28,7 +28,7 @@
         grid-column: 2/3;
         padding-right: 4rem;
     }
-    main {
+    main .index {
         display: grid;
         grid-template-columns: 2fr 1fr 1fr;
         grid-template-rows: 1fr 1fr 1fr;

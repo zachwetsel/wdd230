@@ -34,7 +34,7 @@ body {
 }
 
 header {
-    background-color: var(--primary);
+    background-color: var(--secondary);
     display: grid;
     grid-template-rows: 1fr 1fr 1fr;
     grid-template-columns: 1fr 1fr;
@@ -50,19 +50,19 @@ header span {
     font-weight: 700;
     font-size: 200%;
     color: white;
+    background-color: var(--secondary);
     grid-row: 2 / 3;
     grid-column: 2/3;
 
 }
 
 nav {
-    background-color: var(--secondary);
+    background-color: var(--primary);
 }
 nav ul {
     list-style-type: none;
 }
 nav a {
-    color: white;
     padding: 1rem;
     text-decoration: none;
     display: block;
@@ -121,10 +121,11 @@ ul.menuLinks.open {
 
 main {
     padding: 1rem 2vw;
+    margin-bottom: 60px;
 }
 
 main h1 {
-    border-bottom: 1px solid --primary;
+    border-bottom: 1px solid var(--primary);
     color: var(--primary);
 }
 
@@ -165,7 +166,7 @@ footer {
     box-shadow: 1px 1px 10px black;
     padding-bottom: 50px;
     margin-bottom: 20px;
-    border: 1px solid --primary;
+    border: 1px solid var(--primary);
     background-color: lightgray;
     border-radius: 10px;
     overflow: hidden;
@@ -182,7 +183,7 @@ table {
     margin: 2rem;
     width: 100%;
     max-width: 800px;
-    border: 1px solid --light;
+    border: 1px solid var(--light);
     padding: .5rem 2%;
     text-align: left;
     background-color: var(--light);
@@ -253,10 +254,26 @@ table {
     padding: 20px;
     border-radius: 5px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    background-color: var(--light);
 }
 .member-card img {
     max-width: 100%;
     height: auto;
+    object-fit: cover;
+}
+.member-card h3 {
+    color: var(--primary);
+}
+.member-card p {
+    margin: 0;
+    overflow: hidden;
+}
+.member-card a {
+    display: block;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
 }
 .member-list {
     list-style-type: none;

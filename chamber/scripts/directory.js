@@ -23,7 +23,7 @@ function displayMembers(members) {
         <p>Phone: ${member.phone}</p>
         <p>Website: <a href="${member.website}" target="_blank">${member.website}</a></p>
         <p>Membership Level: ${member.membership}</p>
-        <img src="images/${member.image}" alt="${member.name}">
+        <img src="images/${member.image}" alt="${member.name}" loading="lazy">
         `;
 
         directory.appendChild(memberElement);
