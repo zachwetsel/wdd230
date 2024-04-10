@@ -119,6 +119,7 @@ main.dark {
 
 main {
     padding: 1rem 2vw;
+    margin-bottom: 4rem;
 }
 
 main h1 {
@@ -194,11 +195,12 @@ main li {
     opacity: 0.75;
 }
 
+
 footer {
     background-color: #033F63;
     color: white;
     position: fixed;
-    padding-top: 2em;
+    padding-top: 2rem;
     left: 0;
     bottom: 0;
     width: 100%;
