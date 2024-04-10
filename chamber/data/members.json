@@ -1,0 +1,58 @@
+[
+    {
+        "name": "Duck Donuts",
+        "address": "5029 Sunnyside Rd, Ammon, ID",
+        "phone": "(208)932-7036",
+        "website":"https://order.duckdonuts.com/menu/duck-donuts-ammon", 
+        "image": "",
+        "membership": "Gold"
+    },
+    {
+        "name": "Idaho Central Credit Union",
+        "address": "3330 S 15th E, Idaho Falls, ID",
+        "phone": "(208)478-3300",
+        "website":"https://www.iccu.com/locations/sunnyside-branch/", 
+        "image": "",
+        "membership": "Gold"
+    },
+    {
+        "name": "College of Eastern Idaho",
+        "address": "1600 S 25th E, Idaho Falls, ID",
+        "phone": "(208)524-3000",
+        "website":"https://cei.edu/", 
+        "image": "",
+        "membership": "Gold"
+    },
+    {
+        "name": "Mountain View Hospital",
+        "address": "2325 Coronado St, Idaho Falls, ID",
+        "phone": "(208)557-2700",
+        "website":"https://www.mountainviewhospital.org/", 
+        "image": "",
+        "membership": "Gold"
+    },
+    {
+        "name": "Post Register",
+        "address": "333 Northgate Mile, Idaho Falls, ID",
+        "phone": "(208)522-1800",
+        "website":"https://www.postregister.com/", 
+        "image": "",
+        "membership": "Gold"
+    },
+    {
+        "name": "Idaho Falls Zoo",
+        "address": "2940 Carnival Way, Ammon, ID",
+        "phone": "(208)612-8552",
+        "website":"https://www.idahofallsidaho.gov/1736/Zoo", 
+        "image": "idaho-falls-zoo.webp",
+        "membership": "Gold"
+    },
+    {
+        "name": "Museum of Idaho",
+        "address": "200 N Eastern Ave, Idaho Falls, ID",
+        "phone": "(208)522-1400",
+        "website":"https://order.duckdonuts.com/menu/duck-donuts-ammon", 
+        "image": "museum-of-idaho.webp",
+        "membership": "Gold"
+    }
+]

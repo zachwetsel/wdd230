@@ -243,3 +243,24 @@ table {
 #levels tfoot th {
     background-color: var(--primary);
 }
+#directory {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    grid-gap: 20px;
+}
+.member-card {
+    border: 1px solid var(--primary);
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+.member-card img {
+    max-width: 100%;
+    height: auto;
+}
+.member-list {
+    list-style-type: none;
+}
+.member-list li {
+    margin-bottom: 20px;
+}
