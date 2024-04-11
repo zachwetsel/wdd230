@@ -160,6 +160,9 @@ footer {
 .main-content figure {
     padding-bottom: 1rem;
 }
+.main-content figure img {
+    width: 50%;
+}
 .card {
     width: 100%;
     box-shadow: 1px 1px 10px black;
