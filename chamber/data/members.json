@@ -5,7 +5,7 @@
         "phone": "(208)932-7036",
         "website":"https://order.duckdonuts.com/menu/duck-donuts-ammon", 
         "image": "duck-donuts.webp",
-        "membership": "Gold"
+        "membership": "Silver"
     },
     {
         "name": "Idaho Central Credit Union",
@@ -21,7 +21,7 @@
         "phone": "(208)524-3000",
         "website":"https://cei.edu/", 
         "image": "cei.webp",
-        "membership": "Gold"
+        "membership": "Non-Profit"
     },
     {
         "name": "Mountain View Hospital",
@@ -37,7 +37,7 @@
         "phone": "(208)522-1800",
         "website":"https://www.postregister.com/", 
         "image": "post-register.webp",
-        "membership": "Gold"
+        "membership": "Silver"
     },
     {
         "name": "Idaho Falls Zoo",
@@ -51,8 +51,8 @@
         "name": "Museum of Idaho",
         "address": "200 N Eastern Ave, Idaho Falls, ID",
         "phone": "(208)522-1400",
-        "website":"https://order.duckdonuts.com/menu/duck-donuts-ammon", 
+        "website":"https://museumofidaho.org/", 
         "image": "museum-of-idaho.webp",
-        "membership": "Gold"
+        "membership": "Silver"
     }
 ]

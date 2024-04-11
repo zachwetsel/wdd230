@@ -20,8 +20,9 @@
 </head>
 <body>
     <header>
-        <img src="images/idaho-falls.webp" alt="Idaho Falls">
         <span>Idaho Falls Chamber of Commerce</span>
+        <img src="images/idaho-falls.webp" alt="Idaho Falls">
+        <a href="join.html" id="call-to-action">Join the Chamber</a>
     </header>
     <nav>
         <button id="myButton"></button>
@@ -33,14 +34,31 @@
         </ul>
     </nav>
     <main class="index">
-        <div id="hero">
-            <img src="images/placeholder.png" alt="placeholder">
-            <span>Idaho Falls Chamber of Commerce</span>
+        <div id="meet-and-greet-banner" class="banner">
+            <p>Join us for the Chamber of Commerce Meet and Greet on Wednesday at 7:00 p.m.!</p>
+            <button id="close-banner-btn">Close</button>
+        </div>        
+        <div  class="index-sidebar">
+            <div id="current-weather">
+                <h2>Weather</h2>
+                <p>The current temperature in Idaho Falls is <span id="current-temp"></span></p>
+                <figure>
+                    <img id="weather-icon" src="" alt="">
+                    <figcaption></figcaption>
+                </figure>
+            </div>
+            <h3>3-Day Forecast</h3>
+            <div id="forecast"></div>
         </div>
-        <h1>Call to Action</h1>
-        <h2>Current Events</h2>
-        <h2>Weather</h2>
+        
         <h2>Company Spotlight</h2>
+        <div id="spotlight-container"></div>
+        <h2>Current Events</h2>
+        <ul id="events">
+            <li>Chamber of Commerce Luncheon</li>
+            <li>City Pool Opens</li>
+            <li>District 91 school year ends</li>
+        </ul>
     </main>
     <footer>
         <p>Contact Info</p>
@@ -49,5 +67,8 @@
     </footer>
     <script src="scripts/getDates.js"></script>
     <script src="scripts/hamburgerMenu.js"></script>
+    <script src="scripts/weather.js"></script>
+    <script src="scripts/spotlight.js"></script>
+    <script src="scripts/banner.js"></script>
 </body>
 </html>

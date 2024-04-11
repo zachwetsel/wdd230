@@ -19,24 +19,28 @@
     }
     
     header {
-        grid-template-columns: 2fr 1fr;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
     }
     header img {
         grid-column: 1/2;
+        grid-row: 1/3;
     }
     header span {
         grid-column: 2/3;
-        padding-right: 4rem;
+        justify-self: center;
+        grid-row: 1/2;
+    }
+    header a {
+        grid-column: 2/3;
+        grid-row: 2/3;
+        justify-self: center;
     }
     main .index {
         display: grid;
         grid-template-columns: 2fr 1fr 1fr;
         grid-template-rows: 1fr 1fr 1fr;
-    }
-
-    #hero {
-        grid-column: 1/2;
-        grid-row: 1/4;
     }
 
     .discover {
@@ -90,4 +94,65 @@
         grid-column: 2/3;
         margin-top: 0;
     }
+    .join {
+        flex-direction: row;
+    }
+    .wf1, #levels {
+        flex: 1;
+    }
+    #levels {
+        margin-left: 20px;
+    }
+    .index {
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+        grid-column-gap: 20px;
+
+    }
+    .index h2:first-of-type {
+        grid-column: 1/2;
+        grid-row: 1/2;
+        margin-bottom: 20px;
+    }
+    .index #spotlight-container {
+        grid-column: 1/2;
+        grid-row: 2/3;
+        display: flex;
+        flex-wrap: nowrap;
+        justify-content: center;
+        margin-bottom: 20px;
+    }
+    #spotlight-container .member-card {
+        flex: 0 0 auto;
+        width: calc(33.33% - 20px);
+        margin: 0 10px;
+    }
+    .index-sidebar {
+        grid-column: 2/3;
+        grid-row: 1/6;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: auto auto auto auto;
+    }
+    #current-weather {
+        grid-column: 1/4;
+        grid-row: 2/3;
+    }
+    .index-sidebar h3 {
+        grid-column: 1/4;
+        grid-row: 3/4;
+        padding: 10px;
+        margin-top: 10px;
+    }
+    .index-sidebar #forecast {
+        grid-column: 1/4;
+        grid-row: 4/5;
+    }
+    .index h2:last-of-type {
+        grid-row: 3/4;
+    }
+    .index #events {
+        grid-row: 4/5;
+    }
+
 }
